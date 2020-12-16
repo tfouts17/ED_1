@@ -1,4 +1,4 @@
-var numBalls = 4; //Set Number of balls
+var numBalls = 6; //Set Number of balls
 var damper = 0.03; //Constant to reduce exit velocity
 var gravity = 0.07; //Y acceleration
 var friction = -0.9; //Slow the balls over time
