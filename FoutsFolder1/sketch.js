@@ -8,7 +8,7 @@ var yVelocity = 0;
 let balls = [];
 
 function setup() {
-  createCanvas(innerWidth, innerWidth); //innerWidth, innerWidth
+  createCanvas(innerWidth, innerWidth/2); //innerWidth, innerWidth
   
   for (var i = 0; i < numBalls; i++) { //Create list with new ball objects
     balls[i] = new Ball(random(width), random(0,height/2), random(40, 70), i,balls, random(0,255),random(0,255),random(0,255), xVelocity, yVelocity);
