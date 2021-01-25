@@ -1,0 +1,174 @@
+<!-- https://monicaaeortiz.github.io/EDI/HTML_intro/index.html-->
+
+<!DOCTYPE html>
+
+<html lang="">
+
+
+
+<head>
+
+   <meta charset="utf-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+   <title> Fouts Matchbox Car </title>
+
+
+
+   <style>
+	body{
+	 background-color: LightGray;
+	 font-family: 'Roboto';
+	 padding: 50px;
+	 margin: 20px;
+
+	}
+	h1, h3, h4{
+	 font-family: 'Lora';
+	}
+
+
+
+   </style>
+
+
+
+
+</head>
+
+<body>
+	<h1> Matchbox Car Replication - 3D Printing </h1>
+
+	<div class='modelo-wrapper'> <div style="width: 100%; padding-bottom: 56.25%; position: relative"> <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"> 	<iframe src="https://app.modelo.io/embedded/N-c8BiYU7K?viewport=false&autoplay=false&autoRotate=false&hideTools=false" style="width:100%;height:100%;" frameborder="0" 		mozallowfullscreen webkitallowfullscreen allowfullscreen ></iframe> </div> </div> </div>
+
+
+	<p><i> The goal of this project was to accurately replicate a toy car using 3D modeling software and a 3D printer. </i></p>
+
+	<h3> Project Guidelines:</h3>
+	<ul>
+	<li> Car designed as an intersection of three forms </li>
+	<li> Design car in a 1:1 ratio </li>
+	<li> Size accuracy ±1%  </li>
+	<li> Design is exported as stl </li>
+	<li> Student orients model in Cura for 3D printing to minimize support material </li>
+	<li> File is exported as a gcode </li>
+	<li> Final design is shared out as an embedded STL on an HTML webpage </li>
+	<ul>
+
+	<h3> Project Steps:</h3>
+	<h4> Step 1: </h4>
+		<p>
+		The first step of the project was to create an engineering drawing of the toy car. I drew the profile of the toy car from 3 perspectives: top view, side 			view, and front view. I used calipers to measure the dimensions of the car so I could preserve the size and shape of the car in the 3D modeling software.
+		<p>
+
+		<figure>
+		<img src = "https://github.com/tfouts17/ED_1/blob/master/Car%20Project/FoutsCarReflectionFolder/Drawing1.png?raw=true" alt = "Profile Drawing" style = "width: 			600px">
+		<figcaption> Profile Drawing</figcaption>
+		</figure>
+
+
+	<h4> Step 2: </h4>
+		<p>
+		The profiles were then imported into Fusion 360 as an SVG file. I created a block with the same dimensions as the toy car, which would ultimately become 			our final model. I added the profiles of the top, side, and front of the car to the corresponding sides of the envelope. After the profiles were aligned 			on the sides of the envelope, I used the push pull tool to push the negative space of each plane through the block. The result of the intersection of the 			3 planes was a solid that roughly resembled the toy car.
+		<p>
+
+		<figure>
+		<img src = "https://github.com/tfouts17/ED_1/blob/master/Car%20Project/FoutsCarReflectionFolder/Envelope.png?raw=true" alt = "Envelope" style = "width: 			600px">
+		<figcaption> Envelope</figcaption>
+		</figure>
+
+
+
+	<h4> Step 3: </h4>
+		<p>
+		The next step was to create the wheel wells. I outlined the wheel wells with the pen tool in Adobe illustrator, and I exported the file as an SVG. I imported the 		SVG into Fusion, and I aligned the wheel well on an offset plane in the correct location relative to the body of the car. Once again, I used the push pull tool to 		push the wheel well into the body of the car. I then pushed a 2mm hole through the center of the wheel well for the axel, and the main body of the car was done.
+		<p>
+
+
+
+	<h4> Step 4: </h4>
+		<p>
+		After the body of the car was formed and the wheel wells were in place, I started to add details to the car. I added the outline of the door, the door knob, a 			window, and hood decorations to the car. I added all of these details using the same method. I would outline the feature I hoped to replicate in Adobe, export the 		outline as an SVG, import the file into Fusion, and push the feature into the body of the car. Because the body of the car was formed from an outline of the 			outermost points of the car, all of the features were added by pushing imprints into the car. The depth of the door handle, door outline, and hood decorations 			were determined by estimation and prototyping, and the window was pushed all the way through the body of the car.
+		<p>
+
+		<figure>
+		<img src = "https://github.com/tfouts17/ED_1/blob/master/Car%20Project/FoutsCarReflectionFolder/ModelS2.png?raw=true" alt = "Car Body" style = "width: 			600px">
+		<figcaption> Car Body</figcaption>
+		</figure>
+
+	<h4> Step 5: </h4>
+		<p>
+	After the body of the car was completely finished, I designed the wheels for the car. The wheels on the original toy car are cylinders with a spherical indent on the 		outermost face. Additionally, the wheels feature hubcaps, which were imprinted into the concave face. To replicate the wheels, I started with the outline of a slice of 	the wheel. The slice resembled a rectangle with a quarter circle removed from the top right corner. I then used the revolve tool to revolve the shape around the right 		hand edge of the shape, creating a cylinder with a half circle removed from the top. I then created an outline of the hubcap design in Illustrator, and imported the 		outline as an SVG on top of the cylinder. I pushed the negative space to the bottom of the half circle to reveal the curved hubcaps. After adding a 1.2mm axel hole and a 	hubcap rim, the wheels were finished.
+
+		<figure>
+		<img src = "https://github.com/tfouts17/ED_1/blob/master/Car%20Project/FoutsCarReflectionFolder/WheelSidebySide.png?raw=true" alt = "Wheel Design" style = "width: 			700px">
+		<figcaption> Wheel Design </figcaption>
+		</figure>
+
+		<p>
+	<h4> Step 6: </h4>
+		<p>
+		The body of the car and the wheels were exported as STLs and sliced in Cura. The models were then 3D printed. I printed the car using an 8mm brim to ensure solid 		bed adhesion and support material only touching the build plate. By setting the support material to only touching the build plate, the slight curve under the hood 		of the car was supported, but I avoided having to remove unnecessary support material from the car window. I used an X-Acto knife to remove the remnants of the 		support material and the brim, and the car was ready to be assembled.
+		<p>
+
+		<figure>
+		<img src = "https://github.com/tfouts17/ED_1/blob/master/Car%20Project/FoutsCarReflectionFolder/CuraS1.png?raw=true" alt = "Cura View" style = "width: 			600px">
+		<figcaption> Cura View</figcaption>
+		</figure>
+
+	<h3>Setbacks and Solutions</h3>
+	<h4>Setback 1:</h4>
+		<p>
+		I encountered many setbacks while working on this project. The first issue I faced was a lack of accuracy in my hand drawn sketches of the toy car. I was 			ultimately dissatisfied with my hand-drawn profiles of the toy car and I did not believe I would be able to use them to create a model that had a size accuracy of 		±1% from the toy car. My solution was to take photos of the toy car from the three perspectives and import them into Illustrator. Once in Illustrator, I used the 		pen tool to trace the outline of each of the profiles. This method proved to be much more accurate, resulting in my printed model having its largest percent error 		from the toy on the width at 1.07%, and its smallest percent error on the length at 0.38%. The dimensions of the original toy car, in millimeters, is 72.95 x 			27.83 x 18.36, and my printed model has dimensions of 72.67 x 27.53 x 18.54.
+		<p>
+
+		<figure>
+		<img src = "https://github.com/tfouts17/ED_1/blob/master/Car%20Project/FoutsCarReflectionFolder/ThreeViews.png?raw=true" alt = "Illustrator Profile and Final Design" style = "width: 600px">
+		<figcaption> Illustrator Profile and Final Design</figcaption>
+		</figure>
+
+
+
+	<h4>Setback 2:</h4>
+		<p>
+		The next issue I encountered involved added details to the car. In order to create a new sketch in Fusion 360, you must first select a surface or plane on which 		to create the sketch. The issue was that because I had tried to preserve all of the curved faces from the original car, my model lacked flat surfaces that I could 		use to create the sketches. This issue became especially evident when adding the door outline, door knob, and window to the car. There were very few flat surfaces 		on the side of the car, and the surfaces that were flat were not parallel to the side of the car. My solution was to create an offset plane, using the inside of 		the wheel well as a reference. Because I had pushed the wheel well from the original envelope, I knew that the inner most wall of the wheel well was parallel to 		the side of the car. I created an offset plane from the inner wall, and I used this offset plane to push all of the features on the side of the car.
+		<p>
+
+		<figure>
+		<img src = "https://github.com/tfouts17/ED_1/blob/master/Car%20Project/FoutsCarReflectionFolder/Rolling.gif?raw=true" alt = "3D Animation" style = "width: 			600px">
+
+		<figcaption> 3D Animation </figcaption>
+
+		</figure>
+
+	<h4>Setback 3:</h4>
+		<p>
+		The biggest and most time consuming issue I faced was printing the wheels for the car. I designed the wheels to be as close to the original wheels as possible, 		but when I printed the wheels, the resemblance was lost. The issue was that the details of the wheels were too small to be printed accurately. I experimented with 		printing at different layer heights, different speeds, different temperatures, printing in vase mode, printing two wheels on opposite sides of the build plate to 		allow each layer ample time to cool, and even compressing the model to make the curve of the hubcaps more gradual. While the final wheels are not as detailed as I 		would have hoped for, I found that a combination of slow print speed, decreased layer hight, an increase in temperature, and giving each layer extra time to cool 		resulted in the best print.
+		<p>
+
+		<figure>
+		<img src = "https://github.com/tfouts17/ED_1/blob/master/Car%20Project/FoutsCarReflectionFolder/carMoving.gif?raw=true" alt = "Final Test" style = "width: 			600px">
+		<figcaption> Final Test </figcaption>
+
+		</figure>
+
+
+<body>
+
+
+
+
+
+<a href = "index.html"> Go Back! </a>
+
+</body>
+
+
+
+</html>
+
+
+ 
