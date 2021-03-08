@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+
+<a href = "index.html"> Go Back! </a>
+
+
+<html lang="">
+
+
+
+<head>
+
+   <meta charset="utf-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+   <title> Atari Punk Synthesizer </title>
+
+
+
+   <style>
+	body{
+	 background-color: LightGray;
+	 font-family: 'Roboto';
+	 padding: 50px;
+	 margin: 20px;
+
+	}
+	h1, h3, h4{
+	 font-family: 'Lora';
+	}
+
+
+
+   </style>
+
+
+
+
+</head>
+
+<body>
+	<h1> Atari Punk Synthesizer </h1>
+
+	<p><i> The goal of this project was to learn about prototyping circuits, reading schematics, and soldering by building an Atari Punk Synthesizer.
+ </i></p>
+
+
+	<h3> Project Steps:</h3>
+	<h4> Step 1: </h4>
+		<p>  The first phase of this project was to prototype the synthesizer using TickerCad Circuits. I started with TinkerCad Circuits rather than moving directly to the breadboard because I was quarantined for the beginning of the project. I have experience working with circuits and reading schematics, so I felt very comfortable using TinkerCad Circuits. However, the first time I built the circuit it did not work. After troubleshooting the circuit, I realized that I had connected the speaker in the wrong orientation. I did not appreciate that the speaker in TinkerCad was polar, but after swapping the positive and negative leads, the circuit worked perfectly. Below is a picture of the circuit, and you can click on the image to watch a video of the synthesizer working.
+<p>
+
+		<figure>
+      <a href = "https://drive.google.com/file/d/1TeQPiwp5bwoMJKvuLCPTBLwH2U_L34jl/view?usp=sharing">
+        <img src="SynthSS.jpg" width="50%">
+      </a>
+		<figcaption> Virtual Synthesizer</figcaption>
+		</figure>
+
+
+	<h4> Step 2: </h4>
+		<p>
+      After building the virtual synthesizer, the next step was to assemble a breadboard. The breadboard was great because it allowed me to easily rearrange parts to test the different components. The first time I assembled the breadboard, it did not work. I tried troubleshooting the circuit, and being able to easily remove and reposition the different components allowed me to quickly identify the issue. I had accidentally connected pin 14 to the positive rail rather than the negative rail, and I overlooked this mistake every time I checked my circuit.  It was only when I decided to replace the wire connecting pin 14 to the positive rail that I realized my mistake. While assembling the breadboard, I was not concerned with appearance of the circuit, for I knew that I would be disassembling it as soon as it worked properly. Below is a picture of my breadboard, and you can click on the image to watch a video of the breadboard working.
+		<p>
+
+		<figure>
+      <a href = "https://drive.google.com/file/d/13AXYf-BS1XK-3EFORArRnXEHZ3rYHqk0/view?usp=sharing">
+        <img src="assebmled_bread.jpg" width="50%">
+      </a>
+		<figcaption> Breadboard</figcaption>
+		</figure>
+
+
+
+	<h4> Step 3: </h4>
+		<p>
+      The third phase of the project was to build the perfboard. A perfboard is similar to a breadboard in that the rows on both the perfboard and the breadboard are connected with conductive material, and each row is separated from each other. Given the similarities of the breadboard and the perfboard, it was very easy to transfer the components from the breadboard to the perfboard. The main difference between the breadboard and the perfboard is how each accepts components. A breadboard has holes that wires can be slotted into, and the holes retain the wires by themselves. A perfboard also has holes, but these holes go all the way through the board. Wires and components must be soldered into these holes in order to form a conductive connection with the perfboard. While the breadboard was great for testing the circuit, the perfboard is a more permanent option. Given that I expected my perfboard to be the final step in my synthesizer, I wanted to make it look as visually appealing as possible. Personally, I prefer my circuits to appear simplistic, easily traceable, and modular. I did my best to trim my connecting wires as short as possible to make the circuit easily traceable, and therefore easier to troubleshoot. Additionally, instead of soldering the potentiometers, the speaker, and the battery directly to the perfboard, I soldered male dupont pins to the perfboard and female dupont pins to the lead connecting to the speaker, potentiometers, and battery. While this step was not necessary, it did benefit my project in two ways. First, I was concerned that while transporting my perfboard the dangling components could be damaged, and by using the dupont connectors, I can easily remove and reattach the components. Additionally, by having some modular aspects to my perfboard, in the event that I needed to troubleshoot my circuit, I could easily swap out the major components to identify which aspect of my circuit was causing the issue. Luckly, my perfboard worked the first time I assembled it, and you can click on the image of my perfboard below to watch a video of it working.
+		<p>
+
+    <figure>
+      <a href = "https://drive.google.com/file/d/1LvalwU1GVimv-SMJFQRdPTELARoTOy-a/view?usp=sharing">
+        <img src="assembled_perf.jpg" width="50%">
+      </a>
+		<figcaption> Perfboard</figcaption>
+		</figure>
+
+
+<body>
+
+
+
+<a href = "index.html"> Go Back! </a>
+
+</body>
+
+
+
+</html>
