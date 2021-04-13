@@ -87,6 +87,83 @@
 		<figcaption> Perfboard</figcaption>
 		</figure>
 
+  <h4> Step 4: </h4>
+		<p>
+      After getting my perfboard to work, the next step was to create the enclosure for the atari punk synthesizer. Dr. Ortiz and I discussed the possibility of having LEDs whose brightness correspond to the pitch and volume of the synthesizer. I experimented with having LEDs connected in parallel, and because the total resistance increases with each additional LED, the brightness would gradually decrease. I hoped that I could have an array of LEDs, and the number and brightness of the LEDs would vary with the potentiometer settings. I created the circuit in TinkerCad Circuits, and while it worked in theory with a 9V battery, I realized that it would be impractical to implement into my synthesizer circuit. The issue is that the LEDs drew too much power, and a single 9V batter could not power both the synthesizer and the LEDs.
+		<p>
+
+    <figure>
+        <img src="tinkerCadSS.png" width="50%">
+		<figcaption> Tinker Cad Circuit</figcaption>
+		</figure>
+
+    <p>
+      While I would not be able to use the LEDs in the manner I had originally hoped, I still wanted to incorporate lights into my synthesizer. I 3D printed a trapezoidal unit with holes for 50 individual LEDs. In order to power 50 LEDs with a single 9V battery, I needed to use a combination of series and parallel connections. A 9V battery can only power around 6 LEDs in series, but I found that having 4 red LEDs in series with a 470 Ohm resistor produced the level of brightness I wanted. All of the red LEDs were first soldered together in chains of 4 LEDs and the resistor in series, and then the units of 4 LEDs were all connected in parallel. This allowed for a single 9V batter to power all 50 LEDs at the level of brightness I wanted. I insulated all of the connections using hot glue and heat shrink tubing to ensure that the perfboard would not interfere with the LEDs.
+    <p>
+    <figure>
+      <img src = "allLeds.png" width = "50%">
+      <figcaption> LEDs in Series</figcaption>
+      <img src = "bothExterior.png" width = "50%">
+      <figcaption> LEDs in Frame</figcaption>
+      <img src = "bothInteriorFrame.png" width = "50%">
+      <figcaption> Insulated Interior</figcaption>
+    </figure>
+
+    <p>
+      After I had the 3D printed frame with the LEDs, I designed the enclosure to surround the frame and hide the lights. I wanted for the lights to be hidden until turned on, and once turned on they would shine through the outer shell. I designed the outer shell in Illustrator using finger joints, and I based all of my measurements off of the Fusion360 file for the inner frame. This was my first critical mistake, which I will reflect on more later. I chose to make the outer shell from an opaque pink acrylic. The pink shell completely conceals the inner frame until the lights are turned on.
+    </p>
+    <figure>
+      <img src = "synthBox.png" width = "50%">
+      <figcaption> Illustrator File </figcaption>
+      <img src = "synthFrame.png" width = "50%">
+      <figcaption> Interior Frame Fusion360 File</figcaption>
+    </figure>
+
+    <p>
+      With the outer shell assembled, the synthesizer is almost complete. I added my perfboard to the inside of the enclosure, and I resoldered the potentiometers and switches to the perfboard. The only thing left to design was the knobs for the potentiometers. Following Mrs. Riley’s tutorials, I was able to easily create the crush ribs and draft necessary for the knobs to form a tight press fit with the potentiometers. For the two knobs that control the pitch, I tried to create an outline that resembled the shape of a knob on a garden hose. I found an image of a garden hose knob on the internet, and created an outline of the knob in Illustrator. I exported the outline as an SVG and imported it into Fusion360, where I could turn it into a 3D shape. I had to fill in two of the holes in the perimeter of the knob to create space for my text. For the two knobs that control the pitch, I appropriately printed the word ‘Pitch’ on the top, and for the volume knob, I printed ‘VoL’. The process of making the 5k Ohm resistor knob was the same as making the 1M Ohm resistor knob, except because it was such a tall knob, instead of simply extruding the profile to the desired hight, I lofted the knob profile with a circle to create a taper. I am very happy with the way my knobs turned out, and they all fit perfectly after scaling them as needed.
+    </p>
+    <figure>
+      <img src = "bothKnobs.png" width = "50%">
+      <figcaption> Fusion360 Knob Files </figcaption>
+    </figure>
+
+    <h3> Setbacks and Solutions </h3>
+
+    <p>
+      Most of the setbacks I faced pertained to the physical construction of the synthesizer housing rather than the electronics themselves. When I designed the inner frame to hold the LEDs I wanted to ensure that I would not require more acrylic than the students with the traditional box design. I made the frame a size that I thought would look visually appealing, and ultimately used less acrylic than the alternative rectangular design, but this would prove to be one of my biggest setbacks.
+    I did not take into consideration the fact that I needed to fit two batteries and my perfboard inside the frame. In theory the dimensions made sense and everything would have fit, but after adding the leds and insulating them with hot glue, the available space became very limited. My solution had two parts. First, I did my best to reduce the size of my perfboard as much as possible. I moved all of my components to one side of the perfboard, and cut off the unused portion of the board. I also attached my wires directly to the 9V battery leads with hot glue, rather than using the battery adapter. I used hot glue to make the connection as I did not want to solder directly to the battery.
+   </p>
+   <figure>
+     <img src = "bothBoards.png" width = "50%">
+     <figcaption> Original and Cut Perfboard </figcaption>
+   </figure>
+
+  <p>
+    The second aspect of solving the space issue was to 3D print a base that provided more room for components. I was ultimately able to cram all of the components into the original frame, but the force needed to keep them in place concerned me, and I figured it would be better to simply extend the size of box. I 3D printed a base that added 5mm of room to the bottom of the inner frame, and the base had finger joints that matched the finger joints on the outer frame. The outer edges of the base are sloped at 57°, which perfectly matches the angle of the sides of the outer shell. 3D printing a base also helped solve an issue involving the outer shell not fitting properly.
+  </p>
+  <figure>
+    <img src = "synthBase.png" width = "50%">
+    <figcaption> 3D Printed Base Fusion360 File </figcaption>
+    <img src = "baseFinger.png" width = "50%">
+    <figcaption> Base Finger Joints with Shell </figcaption>
+  </figure>
+
+  <p>
+    I designed the outer shell of the synthesizer assuming the dimensions of the inner frame would be identical to the dimensions of the STL file it was printed from. This was a big mistake. The LEDs extruded through the inner frame by a couple of millimeters, which causes the outer shell to be pushed away from the frame. Additionally, the positioning of the outer shell is restricted because the holes in the outer shell must line up with the potentiometers. As a result, when the LEDs forced the outer shell away from the inner frame, I could not compensate by shifting the entire shell downwards. Unfortunately, this left some gaps in the finger joints that I would want to eliminate if I were to redesign the outer shell.
+  </p>
+  <figure>
+    <img src = "fingerGaps.png" width = "50%">
+    <figcaption> Gaps in the Finger Joints </figcaption>
+  </figure>
+
+  <p>
+    My solution to the outer shell not fitting properly was very simple. I assembled the shell, and because the pieces did not connect properly, I wrapped the shell with electrical tape to pull the pieces into their correct positions. Once secured with electrical tape, I used Gorilla Glue to glue the pieces together. Many of the joints were inference fits, but given the stress exerted on the shell by being forced into position, I used Gorilla Glue on almost every joint to ensure that it will never come apart. After using electrical tape to pull all the pieces together, the base I cut from acrylic was approximately 2mm too long, and instead of trying to force it in place, I used the 3D printed base explained above.
+</p>
+<figure>
+  <img src = "finalSynthShot.png" width = "50%">
+  <figcaption> Finalized Synthaziser </figcaption>
+</figure>
+
 
 <body>
 
